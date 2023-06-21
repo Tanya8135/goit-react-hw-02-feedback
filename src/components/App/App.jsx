@@ -59,18 +59,7 @@ class App extends Component {
           ) : (
             <Notification message="There is no feedback" />
           )}
-
-          {/* <Statistics
-            good={good}
-            neutral={neutral}
-            bad={bad}
-            total={this.countTotalFeedback()}
-            positiveFeedback={positiveFeedback}
-          ></Statistics> */}
         </Section>
-        {/* <Section>
-          <Notification message="There is no feedback"></Notification>
-        </Section> */}
       </div>
     );
   }

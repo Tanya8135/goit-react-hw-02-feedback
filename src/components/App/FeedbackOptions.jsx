@@ -1,6 +1,8 @@
+import PropTypes from 'prop-types';
+
 import style from './App.module.css';
 
-const FeedbackOptions = ({ options, onLeavelFeedback }) => {
+const FeedbackOptions = ({ onLeavelFeedback }) => {
   return (
     <div>
       <button className={style.btn} onClick={() => onLeavelFeedback('good')}>
@@ -14,6 +16,10 @@ const FeedbackOptions = ({ options, onLeavelFeedback }) => {
       </button>
     </div>
   );
+};
+
+FeedbackOptions.propTypes = {
+  onLeavelFeedback: PropTypes.func.isRequired,
 };
 
 export default FeedbackOptions;
